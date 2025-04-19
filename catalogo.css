@@ -1,0 +1,165 @@
+/*<h1>Descubre tu esencia única</h1>*/
+/*fondo*/
+        .fondo {
+            width: 1350px; /* Ancho de la imagen */
+            height: 800px; /* Alto de la imagen */
+            background-image: url('p2.jpg'); 
+            background-size: cover; /* Ajusta la imagen al contenedor */
+            background-position: center; /* Centra la imagen */
+        }
+
+*{
+  margin: 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7ea0a9;
+  padding: 13px 30px;
+  font-family: Corsiva;
+  margin: 0px;
+}
+
+.logo-img {
+  max-height: 55px ;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  color: #000000;
+  text-decoration: none;
+  margin: 0 9px;
+  font-size: 1.4em;
+  transition: color 0.3s;
+}
+a {
+  font-weight: bold;
+  text-align: center;
+  color: black; 
+  text-decoration: none;
+}
+.item a {
+  font-weight: bold;
+  text-align: center;
+  color: black; 
+  text-decoration: none;
+  padding: 7px;
+  border: solid 3px; 
+  border-color: black; 
+  border-radius: 10px;
+  font-family: cursive; 
+ background-color: #bcd2d8;
+}
+.item a:hover {
+  background-color:#7ea0a9; 
+}
+.nav-item:hover {
+  color: #f9f8f3;  
+}
+
+.per{
+  text-align: center;
+}
+
+.item img{
+  width: 270px;
+  height: 270px;
+
+}
+
+
+.colec{
+  display: flex;
+  justify-content: space-between;
+  margin: 200px;
+}
+
+.item{
+  text-align: center;
+
+}
+/*informacion*/
+.texto{
+  border: solid 3px;
+  border-color: black;
+  border-radius: 10px;
+  color: black;
+  margin: 0px;
+  padding: 50px;
+  font-family: cursive;
+  text-align: justify;
+ background-color: #7ea0a9;
+ display: flex;
+}
+.tex a{
+  padding: 10px;
+  text-decoration: none;
+  display: flex;
+
+}
+.texto img{
+  max-height: 35px ;
+   padding: 10px;
+
+}
+
+h3{
+ padding: 20px;
+}
+.tex{
+  border: solid 3px;
+  border-color: #dab0dc;
+  border-radius: 5px;
+  color: black;
+  margin: 0px;
+  text-align: justify;
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  font-family: cursive;
+ background-color: #7ea0a9;
+}
+.tex p{
+  font-size:50px;
+}
+/*Buscador*/
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 0px;
+    border-radius: 20px;
+}
+
+.results {
+    margin-top: 2px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-height: 55px;
+    overflow-y: auto;
+    font-size: 35px;
+
+}
+
+.result-item {
+    border-bottom: 1px solid #eee;
+}
+
+.result-item a {
+    text-decoration: none;
+}

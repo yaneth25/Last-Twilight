@@ -1,0 +1,161 @@
+/*menu*/
+*{
+  margin: 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#7ea0a9;
+  padding: 10px 50px;
+  font-family: Corsiva;
+  margin: 0px;
+}
+
+.logo-img {
+  max-height: 55px ;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  color:#000000;
+  text-decoration: none;
+  margin: 0 9px;
+  font-size: 1.4em;
+  transition: color 0.3s;
+}
+
+.nav-item:hover {
+  color: #f9f8f3;  
+}
+
+a {
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  font-family: Corsiva;
+  font-size: 45px;
+}
+/*Productos*/
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto {
+    border: 2px solid #ccc;
+    border-color: #004457;
+    background-color: #7ea0a9;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    width: calc(20% - 20px); /* Tres productos por fila */
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.texto{
+  border: solid 3px;
+  border-color: black;
+  border-radius: 10px;
+  color: black;
+  margin: 0px;
+  padding: 50px;
+  font-family: cursive;
+  text-align: justify;
+ background-color: #7ea0a9;
+ display: flex;
+}
+.tex a{
+  padding: 10px;
+  text-decoration: none;
+  display: flex;
+
+}
+.texto img{
+  max-height: 35px ;
+   padding: 10px;
+
+}
+
+h3{
+ padding: 20px;
+}
+.tex{
+  border: solid 3px;
+  border-color: #dab0dc;
+  border-radius: 5px;
+  color: black;
+  margin: 0px;
+  text-decoration: nones;
+  text-align: justify;
+  display: flex;
+  justify-content: space-between;
+  font-family: cursive;
+ background-color: #dab0dc;
+}
+.tex p{
+  font-size:50px;
+}
+
+/*carrito*/
+    .logo {             
+    cursor: pointer;             
+    font-size: 24px;             
+    font-weight: bold;         
+    }   
+    /*contador*/      
+    .cart-count {            
+    background-color: black;             
+    color: white;             
+    border-radius: 50%;            
+    padding: 5px 10px;            
+    margin-left: 10px;        
+    }   
+     .header {             
+    display: flex;             
+    align-items: center;            
+    }
+    /*Ventanita*/   
+    #modal {            
+    display: none;             
+    position: fixed;             
+    top: 0;             
+    left: 0;             
+    width: 100%;  
+    height: 100%;             
+    background-color: rgba(0, 0, 0, 0.7);             
+    justify-content: center;            
+    align-items: center;        
+    }        
+    .modal-content {             
+    background-color: white;            
+    padding: 20px;             
+    border-radius: 5px;        
+    }     
+    /*Los productos*/    
+    .product {            
+    display: flex;             
+    justify-content: space-between;        
+    }    
+    button{
+        font-size: 20px;
+        border-color: white;
+    } 

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Last Twilight</title>
+	<link rel="stylesheet" type="text/css" href='new.css'>
+</head>
+ <!--menu -->
+ <nav>
+       <ul class="nav-list">
+           <li><a href="index.html" class="nav-item">Inicio</a></li>
+           <li><a href="catalogo.html" class="nav-item">Catalogo</a></li>
+           <li><a href="contactanos.html" class="nav-item">Contacto</a></li>
+           <li><a href="nosotros.html" class="nav-item">Nosotros</a></li>
+       </ul>
+            <div class="logo">
+               <img src="log.jpg" alt="Logo" class="logo-img">
+	        </div>
+ </nav>
+
+    <div class="fondo">
+    <!--Buscador-->
+           <div class="container">
+        <input type="text" id="search" placeholder="Buscar perfumes...🔍︎">
+        <div id="results" class="results"></div>
+    </div>
+        <script src="script.js"></script>
+
+    </div>
+
+<body>
+     <!--Descuento -->
+    <div class="tex">
+   <p> 50% de descuento Compra ahora<br> ¡No te lo pierdas!</p>
+   </div>
+   <br>
+
+   <!--Destacados -->
+<header>
+        <h1>Productos Destacados</h1>
+    </header>
+    <div class="gallery" id="gallery">
+        <div class="product">
+            <img src="28.jpg" alt="Producto 1">
+            <a href="p4h.html"><h2>Perfume Hombre Hero For Men Red Eau De Toilette</h2></a>
+            <p>DESCUBRE EL NUEVO AROMA DE ARMAND DUPREE ICE, FRESCO, ACTUAL Y ELEGANTE. </p>
+            <p class="price">$490.00</p>
+        </div>
+        <div class="product">
+            <img src="9.jpg" alt="Producto 2">
+            <a href="p1m.html"><h2>Ariana Grande - Sweet Like Candy</h2></a>
+            <p>Sumérgete en un mundo de dulzura y encanto con "Sweet Like Candy"</p>
+            <p class="price">$1500.00</p>
+        </div>
+        <div class="product">
+            <img src="26.jpg" alt="Producto 3">
+            <a href="p2h.html"><h2>Perfume Marca Ebc Para Hombre 365 Day Red</h2></a>
+            <p>Para el hombre con confianza en sí mismo, casual y relajada.</p>
+            <p class="price">$420.00</p>
+        </div>
+         <div class="product">
+            <img src="20.jpg" alt="Producto 4">
+            <a href="p6m.html"><h2>Body Mist Set Passionate Island</h2></a>
+            <p>Un aroma fascinante para todo tipo de pieles, seca, normal o sensible.</p>
+            <p class="price">$200.00</p>
+        </div>
+         <div class="product">
+            <img src="27.jpg" alt="Producto 5">
+            <a href="p3h.html"><h2>Perfume Armand Dupree Ice Fuller</h2></a>
+            <p>DESCUBRE EL NUEVO AROMA DE ARMAND DUPREE ICE, FRESCO, ACTUAL Y ELEGANTE. </p>
+            <p class="price">$490.00</p>
+        </div>
+           <div class="product">
+            <img src="15.jpg" alt="Producto 6">
+            <a href="p2m.html"><h2>Versace Bright Crystal Spray</h2></a>
+            <p>Deleita tus sentidos con el aroma de Bright Crystal de Versace.</p>
+            <p class="price">$1,034.49</p>
+        </div>
+           <div class="product">
+            <img src="31.jpg" alt="Producto 7">
+            <a href="p7h.html"><h2>JF9 BLACK PERFUME PARA HOMBRE</h2></a>
+            <p>Es una fragancia que llama la atención por combinar el magnetismo natural del jazmín con el estragón picante y aromas masculinos.</p>
+            <p class="price">$400.00</p>
+        </div>
+    </div>
+
+    <script>
+      const gallery = document.getElementById('gallery');
+
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    gallery.addEventListener('mousedown', (e) => {
+        isDown = true;
+        gallery.style.cursor = 'grabbing'; // Cambia el cursor al arrastrar
+        startX = e.pageX - gallery.offsetLeft;
+        scrollLeft = gallery.scrollLeft;
+    });
+
+    gallery.addEventListener('mouseleave', () => {
+        isDown = false;
+        gallery.style.cursor = 'grab'; // Restablece el cursor
+    });
+
+    gallery.addEventListener('mouseup', () => {
+        isDown = false;
+        gallery.style.cursor = 'grab'; // Restablece el cursor
+    });
+
+    gallery.addEventListener('mousemove', (e) => {
+        if (!isDown) return; // Si no se está presionando el botón del mouse
+        e.preventDefault(); // Evita la selección de texto
+        const x = e.pageX - gallery.offsetLeft;
+        const walk = (x - startX); // Cambia la velocidad del desplazamiento aquí
+        gallery.scrollLeft = scrollLeft - walk; // Permite desplazar a ambos lados
+    });
+    </script>
+    <!-- Informacion-->
+   <br>
+      <div class="texto">
+        <div class="text">
+    <h3>Categorías</h3>
+    <a href="perfumesdemujer.html">Dama</a><br>
+    <a href="perfumesdehombres.html">Caballero</a><br>
+    <a href="LociónCorporal.html">Reagalos</a>
+    </div>
+
+    <div class="text">
+    <h3>Contáctanos</h3>
+    <a href="index.html">Horario de atención:Lunes a viernes de 8:00 a.m. a 8:30 p.m.</a><br>
+    <a href="index.html">Teléfono: 492 137 1463</a><br>
+    <a href="index.html">Whatsapp: 6642509158</a><br>
+    <a href="contactanos.html">Escríbenos</a><br>
+
+    </div>
+
+    <div class="ti">
+    <h3>Síguenos</h3><br>
+   <a target="_blank" href="https://www.instagram.com/mll.jmz_/"><img src="insta.jpg"></a>
+   <a target="_blank" href="https://www.facebook.com/profile.php?id=61554947274942"><img src="fa.jpg"></a>
+   <a target="_blank" href="https://www.youtube.com/@MARTELLJIMENEZKARLAYANETH"><img src="you.jpg"></a>
+   <a target="_blank" href="https://mx.pinterest.com/karlayanethmartelljimenez/"><img src="pi.jpg"></a>
+   </div>
+   </div>
+</body>
+</html>
