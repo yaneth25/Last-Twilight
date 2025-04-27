@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.results {
+    margin-top: 5px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.result-item {
+    border-bottom: 1px solid #eee;
+}
+
+.result-item a {
+    text-decoration: none;
+}

@@ -1,0 +1,151 @@
+/*menu*/
+*{
+  margin: 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7ea0a9;
+  padding: 10px 50px;
+  font-family: Corsiva;
+  margin: 0px;
+}
+
+.logo-img {
+  max-height: 55px ;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  color:#000000;
+  text-decoration: none;
+  margin: 0 9px;
+  font-size: 1.4em;
+  transition: color 0.3s;
+}
+
+.nav-item:hover {
+  color: #f9f8f3;  
+}
+
+/*Producto*/
+.prod{
+  
+  border-radius: 10px;
+  color: black;
+  padding: 100px;
+  font-family: Corsiva;
+  text-align: center;
+  justify-content: space-between;
+  display: flex;
+}
+.pro a{
+  padding: 5px;
+  text-decoration: none;
+  display: flex;
+  color: black;
+
+}
+
+h3{
+ padding: 10px;
+ text-align: center;
+}
+h4{
+ padding: 5px;
+ text-align: center;
+}
+button{
+  background-color: #bcd2d8;
+  color: black;
+  font-family: cursive;
+}
+img{
+  border-color: #7ea0a9;
+}
+p{
+  font-size: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.cora {
+  width: 25px;
+}
+/*informacion*/
+.texto{
+  border: solid 3px;
+  border-color: black;
+  border-radius: 10px;
+  color: black;
+  margin: 0px;
+  text-decoration: nones;
+  font-family: cursive;
+  text-align: justify;
+ background-color: #7ea0a9;
+ display: flex;
+}
+.text a{
+  padding: 5px;
+  text-decoration: none;
+  display: flex;
+  color: black;
+
+}
+.texto img{
+  max-height: 35px ;
+   padding: 10px;
+
+}
+
+/*carrito*/
+body {
+    font-family: Arial, sans-serif;
+}
+
+#carrito-resumen {
+    margin-bottom: 20px;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
