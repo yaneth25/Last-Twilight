@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Last Twilight</title>
-	<link rel="stylesheet" type="text/css" href='new.css'>
+    <title>Contáctanos</title>
+    <link rel="stylesheet" type="text/css" href='contactanos.css'>
 </head>
  <nav>
        <ul class="nav-list">
@@ -13,25 +13,64 @@
        </ul>
                <div class="logo">
                    <img src="logo.jpg" alt="Logo" class="logo-img">
-	           </div>
+               </div>
    </nav>
 <body>
-	<h1>Contactanos</h1>
+<form id="form">
+  <div class="field">
+    <h1>Contactanos</h1>
     <br>
-<input type="text" placeholder="Nombre (obligatorio)" id="num" style="width:400px;">
-<input type="text" placeholder="Apellido (obligatorio)" id="num" style="width:400px;"><br><br>
-<input type="text" placeholder="Correo electrónico (obligatorio)" id="num" style="width:300px;"><br><br>
-<input type="text" placeholder="Mensaje (obligatorio)" id="num" style="width:300px;"><br><br>
-<button onclick="Contactanos()">Enviar</button><br><br>
-<script type="text/javascript">
-function Contactanos()
-{
+    <label for="title">Asunto</label><br><br>
+    <input type="text" name="title" id="title"  style="width:250px;">
+  </div>
+  <div class="field">
+    <label for="name">Nombre (obligatorio)</label><br><br>
+    <input type="text" name="name" id="name" style="width:250px;">
+  </div>
+  <div class="field">
+    <label for="email">Correo electrónico (obligatorio)</label><br><br>
+    <input type="text" name="email" id="email"  style="width:250px;">
+  </div>
+<div class="field">
+    <label for="message">Mensaje (obligatorio)</label><br><br>
+    <textarea type="text" name="message" id="message" rows="10" cols="68"></textarea>
+  </div>
+  <div class="field">
+  <input type="submit" id="button" value="Enviar" style="width: 100px;">
+    </div>
 
-    alert("Tu mensaje fue enviado con exito");
-    
-    }
+</form>
+
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('hZWvW7mHccOGZirC8')
 </script>
 
+<script>
+          const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_wbl2g3d';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Su mensaje fue enviado con éxito');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+</script>
+</div>
       <div class="texto">
         <div class="text">
     <h3>Categorías</h3>
@@ -49,7 +88,7 @@ function Contactanos()
     </div>
 
     <div class="ti">
-    <h3>Síganos</h3><br>
+    <h3>Síguenos en Redes Sociales</h3><br>
    <a target="_blank" href="https://www.instagram.com/mll.jmz_/"><img src="insta.jpg"></a>
    <a target="_blank" href="index.html"><img src="fa.jpg"></a>
    <a target="_blank" href="index.html"><img src="you.jpg"></a>
