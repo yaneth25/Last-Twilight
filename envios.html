@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Envió</title>
+	<style type="text/css">
+		
+		/*menu*/
+body {
+  margin: 0px;
+}
+
+a {
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  text-decoration: none; /* Añade esto para eliminar subrayado por defecto */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6d0510; /*color del menu*/
+  padding: 13px 30px;
+  font-family: Corsiva;
+  margin: 0px;
+  position: sticky; /* Añade esto para el efecto sticky */
+  top: 0; /* Asegúrate de que se pegue a la parte superior */
+  z-index: 1000; /*  Añade esto para que el menú esté encima de otros elementos */
+}
+
+.logo-img {
+  max-height: 55px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  margin: 0 9px;
+  font-size: 1.4em;
+  transition: color 0.3s;
+}
+
+.nav-item:hover {
+  color: black;
+}
+/*texto*/
+.contenedor2 {
+  display: flex; 
+  padding: 10px; 
+  margin: auto; /*margen automático para centrar horizontalmente*/
+}
+
+.text-contenedor2 {
+  flex: 1; /*el texto ocupa el espacio restante*/
+  margin-left: 90px; /*espacio entre la imagen y el texto*/
+}
+
+.image-contenedor2 {
+  width: 425px; 
+}
+
+.image-contenedor2 img {
+  width: 100%; /*la imagen ocupa todo el ancho del contenedor*/
+  height: auto; /*mantiene la proporción de la imagen*/
+}
+
+ol{
+	font-size: 20px;
+} 
+</style>
+</head>
+ <!--menu -->
+ <nav>
+       <ul class="nav-list">
+           <li><a href="index.html" class="nav-item">Inicio</a></li>
+           <li><a href="catalogo.html" class="nav-item">Catálogo</a></li>
+           <li><a href="contactanos.html" class="nav-item">Contacto</a></li>
+           <li><a href="nosotros.html" class="nav-item">Nosotros</a></li>
+       </ul>
+            <div class="logo">
+               <img src="w.png" alt="Logo" class="logo-img">
+	        </div>
+ </nav>
+
+<body>
+<div class="contenedor2">
+<div class="text-contenedor2">
+ <ol>
+ 	<h3>TIEMPO APROXIMADO DE ENTREGA</h3>
+  <li>Envío Standard (Gratuito):<br>La entrega tarda entre 4 y 6 días hábiles.</li><br><br>
+  <li>Envío Rápido en menos de 24 horas (Gratuito):<br>Esta opción está disponible solo para entregas dentro de Tijuana.</li><br><br>
+  <li>¿Necesitas ayuda?:<br>Si necesitas ayuda, también puedes ponerte en contacto con el centro de<br>Atención al Cliente de Last Twilight para cualquier duda o ayuda adicional.</li></div>
+  <div class="image-contenedor2">
+  <img src="80.png">
+  </div>
+</ol>
+</div>
+</body>
+</html>

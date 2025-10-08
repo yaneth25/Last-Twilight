@@ -1,5 +1,5 @@
 /*menu*/
-*{
+body{
   margin: 0px;
 }
 
@@ -7,13 +7,14 @@ a {
   font-weight: bold;
   text-align: center;
   color: black;
+  text-decoration: none;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #9f2533; /*color del menu*/
+  background-color: #6d0510; /*color del menu*/
   padding: 13px 30px;
   font-family: Corsiva;
   margin: 0px;
@@ -32,7 +33,7 @@ nav {
 }
 
 .nav-item {
-  color:#000000;
+  color:white;
   text-decoration: none;
   margin: 0 9px;
   font-size: 1.4em;
@@ -40,47 +41,15 @@ nav {
 }
 
 .nav-item:hover {
-  color: #f9f8f3;  
+  color: black;  
 }
-
 
 /*contactanos*/
 .field{
   text-align: center;
-  margin: 20px;
+  margin: 10px;
 }
 
 input{
   border-radius: 100px;
-}
-
-
-/*informacion*/
-.texto{
-  border: solid 3px;
-  border-color: black;
-  border-radius: 10px;
-  color: black;
-  margin: 0px;
-  text-decoration: nones;
-  font-family: cursive;
-  text-align: justify;
- background-color: #9e182b;
- display: flex;
-}
-
-.texto img{
-  max-height: 35px ;
-   padding: 10px;
-
-}
-
-h3{
- padding: 20px;
-}
-
-.text a{
-  padding: 5px;
-  text-decoration: none;
-  display: flex;
 }
