@@ -1,20 +1,30 @@
 /*menu*/
-*{
+body {
   margin: 0px;
+}
+
+a {
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  text-decoration: none; /*elimina el subrayado*/
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:#7ea0a9;
-  padding: 10px 50px;
+  background-color: #6d0510; /*color del menu*/
+  padding: 25px 30px;
   font-family: Corsiva;
   margin: 0px;
+  position: sticky; /*el efecto sticky*/
+  top: 0;
+  z-index: 1000; /*  Añade esto para que el menú esté encima de otros elementos */
 }
 
 .logo-img {
-  max-height: 55px ;
+  max-height: 55px;
 }
 
 .nav-list {
@@ -25,7 +35,7 @@ nav {
 }
 
 .nav-item {
-  color:#000000;
+  color: white;
   text-decoration: none;
   margin: 0 9px;
   font-size: 1.4em;
@@ -33,21 +43,9 @@ nav {
 }
 
 .nav-item:hover {
-  color: #f9f8f3;  
-}
-
-a {
-  font-weight: bold;
-  text-align: center;
   color: black;
-  text-decoration: none;
 }
 
-h1 {
-  text-align: center;
-  font-family: Corsiva;
-  font-size: 45px;
-}
 /*Productos*/
 .galeria {
     display: flex;
@@ -57,8 +55,8 @@ h1 {
 
 .producto {
     border: 2px solid #ccc;
-    border-color: #004457;
-    background-color: #7ea0a9;
+    border-color: black;
+    background-color: white;
     border-radius: 5px;
     text-align: center;
     margin: 10px;
@@ -70,49 +68,7 @@ h1 {
     max-width: 100%;
     height: auto;
     border-radius: 20px;
-}
-.texto{
-  border: solid 3px;
-  border-color: black;
-  border-radius: 10px;
-  color: black;
-  margin: 0px;
-  padding: 50px;
-  font-family: cursive;
-  text-align: justify;
- background-color: #7ea0a9;
- display: flex;
-}
-.tex a{
-  padding: 10px;
-  text-decoration: none;
-  display: flex;
-
-}
-.texto img{
-  max-height: 35px ;
-   padding: 10px;
-
-}
-
-h3{
- padding: 20px;
-}
-.tex{
-  border: solid 3px;
-  border-color: #dab0dc;
-  border-radius: 5px;
-  color: black;
-  margin: 0px;
-  text-decoration: nones;
-  text-align: justify;
-  display: flex;
-  justify-content: space-between;
-  font-family: cursive;
- background-color: #dab0dc;
-}
-.tex p{
-  font-size:50px;
+    transition: all 0.3s ease; /* Suaviza la transición */
 }
 
 /*carrito*/
@@ -156,6 +112,45 @@ h3{
     justify-content: space-between;        
     }    
     button{
-        font-size: 20px;
-        border-color: white;
+        font-size: 17px;
+        color: black;
+        border-color: black;
+        background-color: white;
+        border-radius: 5px;
+        margin: 10px;
     } 
+    button:hover {
+    background-color: #6d0510;
+    color: white;
+}
+
+/*informacion*/
+.texto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6d0510; /*color del menu*/
+  padding: 13px 30px;
+  font-family: Corsiva;
+  margin: 0px;
+  color: white;
+}
+.texto a{
+    color: white;
+}
+.texto img{
+  max-height: 35px ;
+   padding: 10px;
+   border-radius: 22px;
+}
+
+/*Derechos reservados*/
+.DR{
+  text-align: center;
+   padding: 1px 0px;
+  margin: 0px;
+  color: white;
+  background-color: #6d0510; /*color del menu*/
+  font-size: 17px;
+  font-family: Corsiva;
+}
