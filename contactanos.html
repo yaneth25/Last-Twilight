@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contáctanos</title>
+    <link rel="stylesheet" type="text/css" href='contactanos.css'>
+</head>
+ <nav>
+       <ul class="nav-list">
+           <li><a href="index.html" class="nav-item">Inicio</a></li>
+           <li><a href="catalogo.html" class="nav-item">Catálogo</a></li>
+           <li><a href="contactanos.html" class="nav-item">Contacto</a></li>
+           <li><a href="nosotros.html" class="nav-item">Nosotros</a></li>
+       </ul>
+               <div class="logo">
+                   <img src="w.png" alt="Logo" class="logo-img">
+               </div>
+   </nav>
+<body>
+<form id="form">
+  <div class="field">
+    <h1>Centro De Atención Al Cliente</h1>
+    <label for="title">Asunto</label><br><br>
+    <input type="text" name="title" id="title"  style="width:250px;">
+  </div>
+  <div class="field">
+    <label for="name">Nombre (obligatorio)</label><br><br>
+    <input type="text" name="name" id="name" style="width:250px;">
+  </div>
+  <div class="field">
+    <label for="email">Correo electrónico (obligatorio)</label><br><br>
+    <input type="text" name="email" id="email"  style="width:250px;">
+  </div>
+<div class="field">
+    <label for="message">Mensaje (obligatorio)</label><br><br>
+    <textarea type="text" name="message" id="message" rows="10" cols="68"></textarea>
+  </div>
+  <div class="field">
+  <input type="submit" id="button" value="Enviar" style="width: 100px;">
+    </div>
+
+</form>
+
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('hZWvW7mHccOGZirC8')
+</script>
+
+<script>
+          const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_wbl2g3d';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Su mensaje fue enviado con éxito');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+</script>
+</div>
+ 
+</body>
+</html>

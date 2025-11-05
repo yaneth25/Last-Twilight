@@ -1,0 +1,106 @@
+/*menu*/
+body{
+  margin: 0px;
+}
+
+a {
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6d0510; /*color del menu*/
+  padding: 13px 30px;
+  font-family: Corsiva;
+  margin: 0px;
+}
+
+.logo-img {
+  max-height: 55px ;
+}
+
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  color:white;
+  text-decoration: none;
+  margin: 0 9px;
+  font-size: 1.4em;
+  transition: color 0.3s;
+}
+
+.nav-item:hover {
+  color: black;  
+}
+/*Producto*/
+.prod{
+  border-radius: 10px;
+  color: black;
+  padding: 70px;
+  font-family: Corsiva;
+  text-align: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.pro img{
+  border-color: #6d0510;
+  width: 400px;
+  border-radius: 20px;
+}
+
+
+/*informacion*/
+.texto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4b98a0; /*color del menu*/
+  padding: 13px 30px;
+  font-family: Corsiva;
+  margin: 0px;
+}
+.texto img{
+  max-height: 35px ;
+   padding: 10px;
+   border-radius: 22px;
+}
+
+/*Derechos reservados*/
+.DR{
+  text-align: center;
+   padding: 1px 0px;
+  margin: 0px;
+  color: white;
+  background-color: #4b98a0; /*color del menu*/
+  font-size: 17px;
+  font-family: Corsiva;
+}
+
+/*Los productos*/    
+    .product {            
+    display: flex;             
+    justify-content: space-between;        
+    }    
+    button{
+        font-size: 20px;
+        color: black;
+        border-color: black;
+        background-color: white;
+        border-radius: 10px;
+    } 
+    button:hover {
+    background-color: #6d0510;
+    color: white;
+}

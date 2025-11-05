@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Last Twilight</title>
+	<link rel="stylesheet" type="text/css" href='new.css'>
+</head>
+ <!--menu -->
+ <nav>
+       <ul class="nav-list">
+           <li><a href="index.html" class="nav-item">Inicio</a></li>
+           <li><a href="catalogo.html" class="nav-item">Catálogo</a></li>
+           <li><a href="contactanos.html" class="nav-item">Contacto</a></li>
+           <li><a href="nosotros.html" class="nav-item">Nosotros</a></li>
+       </ul>
+            <div class="logo">
+               <img src="w.png" alt="Logo" class="logo-img">
+	        </div>
+ </nav>
+
+    <div class="fondo">
+    <!--Buscador-->
+           <div class="container">
+        <input type="text" id="search" placeholder="Buscar perfumes...🔍︎">
+        <div id="results" class="results"></div>
+    </div>
+        <script src="script.js"></script>
+
+    </div>
+<body>
+<!--descuento-->
+<div class="contenedor2">
+  <div class="image-contenedor2">
+    <img src="83.png" alt="Imagen del producto" style="width:250px">  
+  </div>
+  <div class="text-contenedor2">
+    <h1 style="text-align:center;">¡No te lo pierdas!</h1>
+    <p>¡Aprovecha! 50% de descuento por tiempo limitado.</p>
+    <p>¡Pídelo ahora mismo con solo un par de clics!</p>
+  </div>
+</div>
+<br><br><br><br><br>
+<br><br><br>
+<!--secciones-->
+<div class="galeria">
+              <div class="producto">
+        <img src="80.png" ><br>
+          <a href="envios.html">Envió Gratuito</a>
+       </div>
+        <div class="producto">
+        <img src="81.png" ><br>
+          <a id="devolucionButton" href="#">Devolución</a>
+          <div id="overlay"></div>
+       </div>
+        <div class="producto">
+        <img src="82.png" ><br>
+          <a href="envoltorio.html">Envoltorio Para Regalo</a>
+       </div>
+       </div>
+       <br><br><br><br>
+<div id="devolucionContainer">
+    <h3 style="text-align: center;">Devolución</h3>
+    <p>Si deseas devolver o cambiar un artículo:<br><br>Ponte en contacto con el departamento de Atención al cliente en un plazo de 30 días a partir de la entrega llamando al 525 857 7515<br><br>Solicita un número de autorización de devolución y te lo enviaremos por correo electrónico.<br><br>Para obtener más información sobre los términos, condiciones y métodos de devolución y sustitución, ponte en contacto con el departamento de Atención al cliente llamando al 525 857 7515.</p>
+    <button id="closeButton">Cerrar</button>
+</div>
+<br>
+   <!--Destacados -->
+<header>
+        <h1>Productos Destacados</h1>
+    </header>
+    <div class="gallery" id="gallery">
+        <div class="product">
+            <img src="28.jpg" alt="Producto 1">
+            <a href="p4h.html"><h2>Perfume Hombre Hero For Men Red Eau De Toilette</h2></a>
+            <p>DESCUBRE EL NUEVO AROMA DE ARMAND DUPREE ICE, FRESCO, ACTUAL Y ELEGANTE. </p>
+            <p class="price">$250.00</p>
+        </div>
+        <div class="product">
+            <img src="9.jpg" alt="Producto 2">
+            <a href="p1m.html"><h2>Ariana Grande - Sweet Like Candy</h2></a>
+            <p>Sumérgete en un mundo de dulzura y encanto con "Sweet Like Candy"</p>
+            <p class="price">$1500.00</p>
+        </div>
+        <div class="product">
+            <img src="26.jpg" alt="Producto 3">
+            <a href="p2h.html"><h2>Perfume Marca Ebc Para Hombre 365 Day Red</h2></a>
+            <p>Para el hombre con confianza en sí mismo, casual y relajada.</p>
+            <p class="price">$1,034.49</p>
+        </div>
+         <div class="product">
+            <img src="37.jpg" alt="Producto 4">
+            <a href="p10m.html"><h2>Dolce & Gabbana Devotion</h2></a>
+            <p>Dolce & Gabbana Devotion es una combinación tentadora de jazmín excepcionalmente puro</p>
+            <p class="price">$1,589.00.00</p>
+        </div>
+         <div class="product">
+            <img src="27.jpg" alt="Producto 5">
+            <a href="p3h.html"><h2>Perfume Armand Dupree Ice Fuller</h2></a>
+            <p>DESCUBRE EL NUEVO AROMA DE ARMAND DUPREE ICE, FRESCO, ACTUAL Y ELEGANTE. </p>
+            <p class="price">$490.00</p>
+        </div>
+           <div class="product">
+            <img src="15.jpg" alt="Producto 6">
+            <a href="p2m.html"><h2>Versace Bright Crystal Spray</h2></a>
+            <p>Deleita tus sentidos con el aroma de Bright Crystal de Versace.</p>
+            <p class="price">$1,034.49</p>
+        </div>
+           <div class="product">
+            <img src="31.jpg" alt="Producto 7">
+            <a href="p7h.html"><h2>JF9 BLACK PERFUME PARA HOMBRE</h2></a>
+            <p>Es una fragancia que llama la atención por combinar el magnetismo natural del jazmín con el estragón picante y aromas masculinos.</p>
+            <p class="price">$300.00</p>
+        </div>
+    </div>
+
+    <script>
+      const gallery = document.getElementById('gallery');
+
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    gallery.addEventListener('mousedown', (e) => {
+        isDown = true;
+        gallery.style.cursor = 'grabbing'; // Cambia el cursor al arrastrar
+        startX = e.pageX - gallery.offsetLeft;
+        scrollLeft = gallery.scrollLeft;
+    });
+
+    gallery.addEventListener('mouseleave', () => {
+        isDown = false;
+        gallery.style.cursor = 'grab'; // Restablece el cursor
+    });
+
+    gallery.addEventListener('mouseup', () => {
+        isDown = false;
+        gallery.style.cursor = 'grab'; // Restablece el cursor
+    });
+
+    gallery.addEventListener('mousemove', (e) => {
+        if (!isDown) return; // Si no se está presionando el botón del mouse
+        e.preventDefault(); // Evita la selección de texto
+        const x = e.pageX - gallery.offsetLeft;
+        const walk = (x - startX); // Cambia la velocidad del desplazamiento aquí
+        gallery.scrollLeft = scrollLeft - walk; // Permite desplazar a ambos lados
+    });
+    /*decolucion*/
+    const devolucionButton = document.getElementById("devolucionButton");
+const devolucionContainer = document.getElementById("devolucionContainer");
+const closeButton = document.getElementById("closeButton");
+const overlay = document.getElementById("overlay");
+
+devolucionButton.addEventListener("click", (event) => {
+    event.preventDefault(); // Evitar que la página se desplace
+    devolucionContainer.style.display = "block";
+    overlay.style.display = "block"; // Mostrar el fondo oscuro
+});
+
+closeButton.addEventListener("click", () => {
+    devolucionContainer.style.display = "none";
+    overlay.style.display = "none"; // Ocultar el fondo oscuro
+});
+
+// Cerrar al hacer clic en el overlay también
+overlay.addEventListener("click", () => {
+    devolucionContainer.style.display = "none";
+    overlay.style.display = "none"; // Ocultar el fondo oscuro
+});
+    </script>
+    <!-- Informacion-->
+   <br>
+      <div class="texto">
+        <div>
+    <h3>Categorías</h3>
+    <a href="perfumesdemujer.html">Dama</a><br>
+    <a href="perfumesdehombres.html">Caballero</a><br>
+    </div>
+
+    <div>
+    <h3>Contáctanos</h3>
+    <a href="index.html">Horario de atención:Lunes a viernes de 8:00 a.m. a 8:30 p.m.</a><br>
+    <a href="index.html">Teléfono: 492 137 1463</a><br>
+    <a href="contactanos.html">Escríbenos</a><br>
+    </div>
+
+    <div>
+    <h3>Síguenos en Redes Sociales</h3>
+   <a target="_blank" href="https://www.instagram.com/last_twilight._?igsh=M2VwajFjcXA1MGg5"><img src="insta.jpg"></a>
+   <a target="_blank" href="https://www.facebook.com/profile.php?id=61554947274942"><img src="fa.jpg"></a>
+   <a target="_blank" href="https://www.youtube.com/@MARTELLJIMENEZKARLAYANETH"><img src="you.jpg"  style=" border-radius: 50px;"></a>
+   <a target="_blank" href="https://mx.pinterest.com/karlayanethmartelljimenez/"><img src="pi.jpg"  style=" border-radius: 50px;"></a>
+   </div>
+   </div>
+   <div class="DR">
+    <p>© 2025 Last Twilight. Todos los derechos reservados.</p><br>
+    </div>
+</body>
+</html>

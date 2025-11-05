@@ -1,0 +1,55 @@
+/*menu*/
+body{
+  margin: 0px;
+}
+
+a {
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6d0510; /*color del menu*/
+  padding: 13px 30px;
+  font-family: Corsiva;
+  margin: 0px;
+}
+
+.logo-img {
+  max-height: 55px ;
+}
+
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  color:white;
+  text-decoration: none;
+  margin: 0 9px;
+  font-size: 1.4em;
+  transition: color 0.3s;
+}
+
+.nav-item:hover {
+  color: black;  
+}
+
+/*contactanos*/
+.field{
+  text-align: center;
+  margin: 10px;
+}
+
+input{
+  border-radius: 100px;
+}

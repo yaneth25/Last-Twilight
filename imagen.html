@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devolución</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        #devolucionContainer {
+            display: none; /* Oculto por defecto */
+            position: fixed; /* Posición fija en la pantalla */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Centrar el contenedor */
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000; /* Asegurar que esté encima de otros elementos */
+        }
+
+        #closeButton {
+            background-color: #f44336; /* Rojo */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        #overlay {
+            display: none; /* Oculto por defecto */
+            position: fixed; 
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con transparencia */
+            z-index: 999; /* Justo debajo del contenedor */
+        }
+    </style>
+</head>
+<body>
+
+<button id="devolucionButton">Devolución</button>
+
+<div id="overlay"></div>
+
+<div id="devolucionContainer">
+    <p>Este es el texto que se mostrará en el contenedor de devolución. Aquí puedes incluir información sobre el proceso de devolución, instrucciones, etc.</p>
+    <button id="closeButton">Cerrar</button>
+</div>
+
+<script>
+const devolucionButton = document.getElementById("devolucionButton");
+const devolucionContainer = document.getElementById("devolucionContainer");
+const closeButton = document.getElementById("closeButton");
+const overlay = document.getElementById("overlay");
+
+devolucionButton.addEventListener("click", (event) => {
+    event.preventDefault(); // Evitar que la página se desplace
+    devolucionContainer.style.display = "block";
+    overlay.style.display = "block"; // Mostrar el fondo oscuro
+});
+
+closeButton.addEventListener("click", () => {
+    devolucionContainer.style.display = "none";
+    overlay.style.display = "none"; // Ocultar el fondo oscuro
+});
+
+// Cerrar al hacer clic en el overlay también
+overlay.addEventListener("click", () => {
+    devolucionContainer.style.display = "none";
+    overlay.style.display = "none"; // Ocultar el fondo oscuro
+});
+</script>
+
+</body>
+</html>

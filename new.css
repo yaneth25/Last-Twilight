@@ -1,0 +1,260 @@
+/*menu*/
+body {
+  margin: 0px;
+}
+
+a {
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  text-decoration: none; /* Añade esto para eliminar subrayado por defecto */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6d0510; /*color del menu*/
+  padding: 13px 30px;
+  font-family: Corsiva;
+  margin: 0px;
+  position: sticky; /* Añade esto para el efecto sticky */
+  top: 0; /* Asegúrate de que se pegue a la parte superior */
+  z-index: 1000; /*  Añade esto para que el menú esté encima de otros elementos */
+}
+
+.logo-img {
+  max-height: 55px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  margin: 0 9px;
+  font-size: 1.4em;
+  transition: color 0.3s;
+}
+
+.nav-item:hover {
+  color: black;
+}
+
+/*fondo*/
+        .fondo {
+            width: 100%; /*ancho*/
+            height: 800px; /*alto*/
+            background-image: url('p1.jpg'); /* la imagen */
+            background-size: cover; /* Ajusta la imagen al contenedor */
+            background-position: center; /* Centra la imagen */
+        }
+
+/*Buscador*/
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 0px;
+    border-radius: 20px;
+}
+
+.results {
+    margin-top: 9px;
+    background-color: white;
+    border: 1px solid #ccc; /*tamaño de la linea*/
+    border-radius: 5px;
+    max-height: 100px;
+    border-color: black;
+    overflow-y: auto;
+    font-size: 25px;
+
+}
+
+.result-item {
+    border-bottom: 9px solid #eee;
+}
+
+.result-item a { 
+    text-decoration: none;
+    color: black;
+}
+
+/*descuento*/
+.contenedor2 {
+  display: flex; 
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 20px; 
+  width: 900px; /*ancho del contenedor*/
+  margin: auto; /*margen automático para centrar horizontalmente*/
+}
+
+.text-contenedor2 {
+  flex: 1; /*el texto ocupa el espacio restante*/
+  margin-left: 90px; /*espacio entre la imagen y el texto*/
+}
+
+.text-contenedor2 p {
+  margin-bottom: 10px; /*espacio entre párrafos*/
+  font-size: 20px;
+}
+
+.image-contenedor2 {
+  width: 150px; 
+}
+
+.image-contenedor2 img {
+  width: 100%; /*la imagen ocupa todo el ancho del contenedor*/
+  height: auto; /*mantiene la proporción de la imagen*/
+}
+
+/*secciones*/
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto {
+    border: 2px solid #ccc;
+    border-color: white;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    width: calc(20% - 20px); /* Tres productos por fila */
+}
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    transition: all 0.3s ease; /* Suaviza la transición */
+}
+
+/*devolucion*/
+        #devolucionContainer {
+            display: none; /* Oculto por defecto */
+            position: fixed; /* Posición fija en la pantalla */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Centrar el contenedor */
+            background-color: white;
+            padding: 20px;
+            border: 5px solid black;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000; /*esté encima de otros elementos */
+        }
+
+        #closeButton {
+            background-color: #6d0510;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border: solid 2px #6d0510;
+        }
+
+        #overlay {
+            display: none;
+            position: fixed; 
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con transparencia */
+            z-index: 999; /* Justo debajo del contenedor */
+        }
+/*productos*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #6d0510;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.gallery {
+    display: flex;
+    overflow-x: hidden; /*Oculta la barra de desplazamiento*/
+    cursor: grab; /*Cambia el cursor al arrastrar*/
+}
+
+.product {
+    min-width: 200px; /* Ajusta el ancho */
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-color: black;
+    border-radius: 30px;
+    padding: 10px;
+    background-color:white;
+}
+p{
+  text-align: center;
+}
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+.price{
+  color: black;
+  font-size: 25px;
+}
+a{
+  text-decoration: none;
+}
+
+/*informacion*/
+.texto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6d0510; /*color del menu*/
+  padding: 13px 30px;
+  font-family: Corsiva;
+  margin: 0px;
+  color: white;
+}
+.texto a{
+    color: white;
+}
+.texto img{
+  max-height: 35px ;
+   padding: 10px;
+   border-radius: 22px;
+}
+
+/*Derechos reservados*/
+.DR{
+  align-items: center;
+  padding: 1px 0px;
+  margin: 0px;
+  color: white;
+  background-color: #6d0510; /*color del menu*/
+  font-size: 17px;
+  font-family: Corsiva;
+}
+

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Envoltorio Para Regalo</title>
+    <style type="text/css">
+        /*menu*/
+body {
+  margin: 0px;
+}
+
+a {
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  text-decoration: none; /* Añade esto para eliminar subrayado por defecto */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6d0510; /*color del menu*/
+  padding: 13px 30px;
+  font-family: Corsiva;
+  margin: 0px;
+  position: sticky; /* Añade esto para el efecto sticky */
+  top: 0; /* Asegúrate de que se pegue a la parte superior */
+  z-index: 1000; /*  Añade esto para que el menú esté encima de otros elementos */
+}
+
+.logo-img {
+  max-height: 55px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  margin: 0 9px;
+  font-size: 1.4em;
+  transition: color 0.3s;
+}
+
+.nav-item:hover {
+  color: black;
+}
+/*texto*/
+.contenedor2 {
+  display: flex; 
+  padding: 10px; 
+  margin: auto; /*margen automático para centrar horizontalmente*/
+}
+
+.text-contenedor2 {
+  flex: 1; /*el texto ocupa el espacio restante*/
+  margin-left: 90px; /*espacio entre la imagen y el texto*/
+}
+
+.image-contenedor2 {
+  width: 425px; 
+}
+
+.image-contenedor2 img {
+  width: 100%; /*la imagen ocupa todo el ancho del contenedor*/
+  height: auto; /*mantiene la proporción de la imagen*/
+}
+/*secciones*/
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto {
+    border: 2px solid #ccc;
+    border-color: white;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    width: calc(20% - 20px); /* Tres productos por fila */
+}
+.producto img {
+    max-width: 100%;
+    height: auto;
+    transition: all 0.3s ease; /* Suaviza la transición */
+}
+
+    </style>
+</head>
+ <!--menu -->
+ <nav>
+       <ul class="nav-list">
+           <li><a href="index.html" class="nav-item">Inicio</a></li>
+           <li><a href="catalogo.html" class="nav-item">Catálogo</a></li>
+           <li><a href="contactanos.html" class="nav-item">Contacto</a></li>
+           <li><a href="nosotros.html" class="nav-item">Nosotros</a></li>
+       </ul>
+            <div class="logo">
+               <img src="w.png" alt="Logo" class="logo-img">
+	        </div>
+ </nav>
+<body>
+<div class="contenedor2">
+<div class="text-contenedor2">
+ <ol>
+    <h2>ENVOLTORIO DE REGALOS</h2>
+  <li>Todos los productos se entregan elegantemente envueltos en un papel blanco con nuestro logotipo.</li><br><br>
+  <li>Una de nuestras opciones mas destacada es una impresionante caja roja, este color vibrante no solo llama la atención, sino que también<br>evoca una sensación de lujo y exclusividad. Esta presentación no solo resalta la sofisticación del aroma, sino que también refleja la calidad<br>y el lujo de nuestra marca. Perfecta para regalar en ocasiones especiales. Además, puedes añadir una tarjeta personalizada hará que el regalo<br>sea verdaderamente inolvidable.</li><br><br>
+  <li>No podemos olvidar una elegante bolsa de regalo blanca con asas y el logotipo.<br>Esta opción es perfecta para aquellos que buscan un toque moderno y práctico al regalar fragancias.<br>La bolsa es ideal para llevarlo a cualquier lugar y, al igual que el anterior, siempre puedes<br>añadir una tarjeta personalizada para hacer el gesto aún más especial.</li><br><br>
+  <li>Finalmente, una encantadora bolsa de tela blanca con cierre de cordón y un elegante moño negro.<br>Este empaque suave y delicado brinda un toque único al regalo, haciéndolo perfecto para cualquier ocasión.<br>El moño negro añade un aire de sofisticación, asegurando que cada entrega sea memorable.
+</li>
+<div class="galeria">
+              <div class="producto">
+        <img src="47.jpg" ><br>
+       </div>
+        <div class="producto">
+        <img src="46.jpg" ><br>
+       </div>
+        <div class="producto">
+        <img src="48.jpg" ><br>
+       </div>
+       <div class="producto">
+        <img src="49.jpg" ><br>
+       </div>
+       </div>
+</div>
+  </div>
+</ol>
+</div>
+</body>    
+ </html>
+ 
