@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Perfumes</title>
+	<link rel="stylesheet" type="text/css" href='perfumesdemujer.css'>
+</head>
+ <nav>
+       <ul class="nav-list">
+           <li><a href="index.html" class="nav-item">Inicio</a></li>
+           <li><a href="catalogo.html" class="nav-item">Catalogo</a></li>
+           <li><a href="contactanos.html"class="nav-item">Contacto</a></li>
+           <li><a href="nosotros.html" class="nav-item">Nosotros</a></li>
+            <li><a href="catalogo.html" class="nav-item">Regresar</a></li>
+
+       </ul>
+              
+             <div class="header">     
+    <div class="logo" onclick="toggleModal()">🛒</div>    
+    <div class="cart-count" id="cartCount">0</div> 
+</div>  
+   </nav>
+   <div id="modal">     
+    <div class="modal-content">         
+    <h2>Productos Agregados</h2>         
+    <div id="cartItems"></div>        
+    <div>
+        <strong>Total:</strong> $<span id="totalAmount">0</span>
+    </div>         
+    <button onclick="buy()">Comprar</button>         
+    <button onclick="closeModal()">Cerrar</button>     
+</div>  
+</div> 
+    <h1 style="text-align: center;">Perfumes de Mujer</h1>
+<body>
+	<div class="galeria">
+              <div class="producto">
+        <img src="32.jpg" id="miImagen1"  onmouseover="cambiar1()" onmouseout="volver1()">
+          <a href="p9m.html">ARIANA GRANDE - Cloud</a>
+        <h3>$1,129.00</h3>
+        <button onclick="addToCart('ARIANA GRANDE - Cloud',1129.00 )">Añadir al carrito</button>
+       </div>
+
+         <div class="producto">
+        <img src="37.jpg" id="miImagen2"  onmouseover="cambiar2()" onmouseout="volver2()">
+          <a href="p10m.html" >Dolce & Gabbana Devotion</a>
+        <h3>$1,589.00</h3>
+        <button onclick="addToCart('Dolce & Gabbana Devotion',1589.00 )">Añadir al carrito</button>
+       </div>
+
+         <div class="producto">
+        <img src="38.jpg" id="miImagen3"  onmouseover="cambiar3()" onmouseout="volver3()">
+          <a href="p11m.html" >Paco Rabanne Fame</a>
+        <h3>$1,800.00</h3>
+        <button onclick="addToCart('Paco Rabanne Fame',1800.00 )">Añadir al carrito</button>
+       </div>
+
+         <div class="producto">
+        <img src="39.jpg" id="miImagen4"  onmouseover="cambiar4()" onmouseout="volver4()">
+          <a href="p12m.html" >MOSCHINO TOY</a>
+        <h3>$900.00</h3>
+        <button onclick="addToCart('MOSCHINO TOY',900.00 )">Añadir al carrito</button>
+       </div>
+       
+      <div class="producto">
+        <img src="9.jpg" id="miImagen5"  onmouseover="cambiar5()" onmouseout="volver5()">
+        <br>
+	      <a href="p1m.html" >Ariana Grande<br>Sweet Like Candy</a>
+        <h3>$1500.00</h3>
+        <button onclick="addToCart('Ariana Grande-Sweet Like Candy', 1500.00)">Añadir al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="15.jpg" id="miImagen6"  onmouseover="cambiar6()" onmouseout="volver6()">
+	      <a href="p2m.html" >Versace Bright<br>Crystal Spray</a>
+        <h3>$1,034.49</h3>
+        <button onclick="addToCart('Versace Bright Crystal Spray', 1034.49)">Añadir al carrito</button>
+      </div>
+
+       <div class="producto">
+        <img src="16.jpg" id="miImagen7"  onmouseover="cambiar7()" onmouseout="volver7()">
+	      <a href="p3m.html">Perfume Para Mujer Marca Ebc Cloud </a>
+        <h3>$190.00</h3>
+        <button onclick="addToCart('Perfume Para Mujer Marca Ebc Cloud', 190.00)">Añadir al carrito</button>
+       </div>
+      <div class="producto">
+        <img src="17.jpg" id="miImagen8"  onmouseover="cambiar8()" onmouseout="volver8()">
+	      <a href="p4m.html">Perfume Adrianna Cotton Candy Marca Mirage </a>
+        <h3>$150.00</h3>
+        <button onclick="addToCart('Perfume Adrianna Cotton Candy Marca Mirage',150.00)">Añadir al carrito</button>
+      </div>
+
+
+         <div class="producto">
+        <img src="40.jpg" id="miImagen9"  onmouseover="cambiar9()" onmouseout="volver9()">
+          <a href="p13m.html">Paco Rabanne - Spray Lady Million</a>
+        <h3>$1600.00</h3>
+        <button onclick="addToCart('Paco Rabanne - Spray Lady Million',1600.00 )">Añadir al carrito</button>
+       </div>
+         <div class="producto">
+        <img src="41.jpg" id="miImagen10"  onmouseover="cambiar10()" onmouseout="volver10()">
+          <a href="p14m.html">Lolita Lempicka</a>
+        <h3>$580.00</h3>
+        <button onclick="addToCart('Lolita Lempicka',580.00 )">Añadir al carrito</button>
+       </div>
+         <div class="producto">
+        <img src="42.jpg" id="miImagen11"  onmouseover="cambiar11()" onmouseout="volver11()">
+          <a href="p15m.html">212 Heroes Forever Young heroes</a>
+        <h3>$1,000.00</h3>
+        <button onclick="addToCart('212 Heroes Forever Young heroes',1000.00 )">Añadir al carrito</button>
+       </div>
+         <div class="producto">
+        <img src="43.jpg" id="miImagen12"  onmouseover="cambiar12()" onmouseout="volver12()">
+          <a href="p16m.html">Olympea</a>
+        <h3>$1,549.00</h3>
+        <button onclick="addToCart('Olympea',1549.00 )">Añadir al carrito</button>
+       </div>
+
+         <div class="producto">
+        <img src="33.jpg"id="miImagen13"  onmouseover="cambiar13()" onmouseout="volver13()">
+          <a href="p18m.html">Perfume Rosé Rush</a>
+        <h3>$780.00</h3>
+        <button onclick="addToCart('Perfume Rosé Rush',780.00 )">Añadir al carrito</button>
+       </div>
+       
+        <div class="producto">
+        <img src="34.jpg" id="miImagen14"  onmouseover="cambiar14()" onmouseout="volver14()">
+          <a href="p19m.html">Victoria's Secret Coconut Milk and Rose</a>
+        <h3>$333.00</h3>
+        <button onclick="addToCart('Victoria s Secret Coconut Milk and Rose',333.00 )">Añadir al carrito</button>
+       </div>
+
+         <div class="producto">
+        <img src="35.jpg" id="miImagen15"  onmouseover="cambiar15()" onmouseout="volver15()">
+          <a href="p20m.html">Victoria's Secret Velvet Petals Shimmer</a>
+        <h3>$300.00</h3>
+        <button onclick="addToCart('Victoria s Secret Velvet Petals Shimmer',300.00 )">Añadir al carrito</button>
+       </div>
+
+           <div class="producto">
+        <img src="44.jpg" id="miImagen16"  onmouseover="cambiar16()" onmouseout="volver16()">
+          <a href="p17m.html">Sì Passione</a>
+        <h3>$2,069.00</h3>
+        <button onclick="addToCart('Sì Passione',2069.00 )">Añadir al carrito</button>
+       </div>
+
+       <div class="producto">
+        <img src="20.jpg" id="miImagen17"  onmouseover="cambiar17()" onmouseout="volver17()">
+        <a href="p6m.html">Body Mist Set<br>Passionate Island</a>
+        <h3>$200.00</h3>
+        <button onclick="addToCart('Body Mist Set Passionate Island',200.00)">Añadir al carrito</button>
+       </div>
+
+         <div class="producto">
+        <img src="24.jpg" id="miImagen18"  onmouseover="cambiar18()" onmouseout="volver18()">
+        <a href="p21m.html">Carolina Herrera - Spray Good Girl para mujer</a>
+        <h3>1000.00</h3>
+        <button onclick="addToCart('Carolina Herrera - Spray Good Girl',1000.00 )">Añadir al carrito</button>
+       </div>
+
+      <div class="producto">
+        <img src="18.jpg" id="miImagen19"  onmouseover="cambiar19()" onmouseout="volver19()">
+	      <a href="p5m.html">NARCISO RODRIGUEZ MUSC NOIR ROSE</a>
+        <h3>$999.00</h3>
+        <button onclick="addToCart('NARCISO RODRIGUEZ MUSC NOIR ROSE', 999.00)">Añadir al carrito</button>
+      </div>
+
+       <div class="producto">
+        <img src="21.jpg" id="miImagen20"  onmouseover="cambiar20()" onmouseout="volver20()">
+	      <a href="p7m.html">Fragancia corporal Body Fantasies vanilla</a>
+        <h3>$55.00</h3>
+        <button onclick="addToCart('Fragancia corporal Body Fantasies vanilla ',55.00)">Añadir al carrito</button>
+      </div>
+
+       <div class="producto">
+        <img src="23.jpg" id="miImagen21"  onmouseover="cambiar21()" onmouseout="volver21()">
+	      <a href="p8m.html">Body Fantasies Sweet Sunrise Fantasy</a>
+        <h3>$100.00</h3>
+        <button onclick="addToCart('Body Fantasies Sweet Sunrise Fantasy',100.00 )">Añadir al carrito</button>
+       </div>
+
+   </div>
+   
+   <!--script del carrito-->
+   <script>
+    let cart = [];
+    let total = 0;
+
+    function addToCart(productName, productPrice) {
+    cart.push({ name: productName, price: productPrice });
+    total += productPrice;
+    updateCart();
+    }
+
+    function updateCart() {
+    document.getElementById('cartCount').innerText = cart.length;
+    const cartItemsDiv = document.getElementById('cartItems');
+    cartItemsDiv.innerHTML = '';
+
+    cart.forEach((item, index) => {
+    cartItemsDiv.innerHTML += `<div class="product">${item.name} - $${item.price}
+    <button onclick="removeFromCart(${index})">x</button>
+    </div>`;
+    });
+    document.getElementById('totalAmount').innerText = total;
+    }
+
+    function removeFromCart(index) {
+    total -= cart[index].price;
+    cart.splice(index, 1);
+    updateCart();
+    }
+
+    function toggleModal() {
+    const modal = document.getElementById('modal');
+    modal.style.display = modal.style.display === 'flex' ? 'none' : 'flex';
+    }
+
+    function closeModal() {
+    toggleModal();
+    }
+
+    function buy() {
+    alert(`Tu compra fue exitosa. Su total fue de: $${total}`);
+    cart = [];
+    total = 0;
+    updateCart();
+    closeModal();
+    }
+    /*script del transición de imagen*/
+     function cambiar1() {
+        document.getElementById('miImagen1').src = '51.jpg'; // Cambia a la nueva imagen
+    }
+
+    function volver1() {
+        document.getElementById('miImagen1').src = '32.jpg'; // Vuelve a la imagen original
+    }
+
+      function cambiar2() {
+        document.getElementById('miImagen2').src = '52.jpg'; // Cambia a la nueva imagen
+    }
+
+    function volver2() {
+        document.getElementById('miImagen2').src = '37.jpg'; // Vuelve a la imagen original
+    }
+      function cambiar3() {
+        document.getElementById('miImagen3').src = '53.jpg'; // Cambia a la nueva imagen
+    }
+
+    function volver3() {
+        document.getElementById('miImagen3').src = '38.jpg'; // Vuelve a la imagen original
+    }
+
+      function cambiar4() {
+        document.getElementById('miImagen4').src = '54.jpg'; // Cambia a la nueva imagen
+    }
+
+    function volver4() {
+        document.getElementById('miImagen4').src = '39.jpg'; // Vuelve a la imagen original
+    }
+      function cambiar5() {
+        document.getElementById('miImagen5').src = '55.jpg'; // Cambia a la nueva imagen
+    }
+
+    function volver5() {
+        document.getElementById('miImagen5').src = '9.jpg'; // Vuelve a la imagen original
+    }
+      function cambiar6() {
+        document.getElementById('miImagen6').src = '56.jpg'; // Cambia a la nueva imagen
+    }
+
+    function volver6() {
+        document.getElementById('miImagen6').src = '15.jpg'; // Vuelve a la imagen original
+    }
+      function cambiar7() {
+        document.getElementById('miImagen7').src = '57.jpg'; // Cambia a la nueva imagen
+    }
+
+    function volver7() {
+        document.getElementById('miImagen7').src = '16.jpg'; // Vuelve a la imagen original
+    }
+      function cambiar8() {
+        document.getElementById('miImagen8').src = '58.jpg'; // Cambia a la nueva imagen
+    }
+
+    function volver8() {
+        document.getElementById('miImagen8').src = '17.jpg'; // Vuelve a la imagen original
+    }
+      function cambiar9() {
+        document.getElementById('miImagen9').src = '59.jpg'; // Cambia a la nueva imagen
+    }
+
+    function volver9() {
+        document.getElementById('miImagen9').src = '40.jpg'; // Vuelve a la imagen original
+    }
+      function cambiar10() {
+        document.getElementById('miImagen10').src = '60.jpg'; // Cambia a la nueva imagen
+    }
+
+    function volver10() {
+        document.getElementById('miImagen10').src = '41.jpg'; // Vuelve a la imagen original
+    }
+
+
+      function cambiar11() {
+        document.getElementById('miImagen11').src = '61.jpg'; // Cambia a la nueva imagen
+    }
+
+    function volver11() {
+        document.getElementById('miImagen11').src = '42.jpg'; // Vuelve a la imagen original
+    }
+
+      function cambiar12() {
+        document.getElementById('miImagen12').src = '62.jpg'; // Cambia a la nueva imagen
+    }
+
+    function volver12() {
+        document.getElementById('miImagen12').src = '43.jpg'; // Vuelve a la imagen original
+    }
+      function cambiar13() {
+        document.getElementById('miImagen13').src = '63.jpg'; // Cambia a la nueva imagen
+    }
+
+    function volver13() {
+        document.getElementById('miImagen13').src = '33.jpg'; // Vuelve a la imagen original
+    }
+
+      function cambiar14() {
+        document.getElementById('miImagen14').src = '64.jpg'; // Cambia a la nueva imagen
+    }
+
+    function volver14() {
+        document.getElementById('miImagen14').src = '34.jpg'; // Vuelve a la imagen original
+    }
+      function cambiar15() {
+        document.getElementById('miImagen15').src = '65.jpg'; // Cambia a la nueva imagen
+    }
+
+    function volver15() {
+        document.getElementById('miImagen15').src = '35.jpg'; // Vuelve a la imagen original
+    }
+      function cambiar16() {
+        document.getElementById('miImagen16').src = '66.jpg'; // Cambia a la nueva imagen
+    }
+
+    function volver16() {
+        document.getElementById('miImagen16').src = '44.jpg'; // Vuelve a la imagen original
+    }
+      function cambiar17() {
+        document.getElementById('miImagen17').src = '67.jpg'; // Cambia a la nueva imagen
+    }
+
+    function volver17() {
+        document.getElementById('miImagen17').src = '20.jpg'; // Vuelve a la imagen original
+    }
+      function cambiar18() {
+        document.getElementById('miImagen18').src = '68.jpg'; // Cambia a la nueva imagen
+    }
+
+    function volver18() {
+        document.getElementById('miImagen18').src = '24.jpg'; // Vuelve a la imagen original
+    }
+      function cambiar19() {
+        document.getElementById('miImagen19').src = '69.jpg'; // Cambia a la nueva imagen
+    }
+
+    function volver19() {
+        document.getElementById('miImagen19').src = '18.jpg'; // Vuelve a la imagen original
+    }
+      function cambiar20() {
+        document.getElementById('miImagen20').src = '70.jpg'; // Cambia a la nueva imagen
+    }
+    function volver20() {
+        document.getElementById('miImagen20').src = '21.jpg'; // Vuelve a la imagen original
+    }
+       function cambiar21() {
+        document.getElementById('miImagen21').src = '71.jpg'; // Cambia a la nueva imagen
+    }
+    function volver21() {
+        document.getElementById('miImagen21').src = '23.jpg'; // Vuelve a la imagen original
+    }
+</script>
+
+   <br>
+     <!-- Informacion-->
+   <br>
+      <div class="texto">
+        <div>
+    <h3>Categorías</h3>
+    <a href="perfumesdemujer.html">Dama</a><br>
+    <a href="perfumesdehombres.html">Caballero</a><br>
+    </div>
+
+    <div>
+    <h3>Contáctanos</h3>
+    <a href="index.html">Horario de atención:Lunes a viernes de 8:00 a.m. a 8:30 p.m.</a><br>
+    <a href="index.html">Teléfono: 492 137 1463</a><br>
+    <a href="contactanos.html">Escríbenos</a><br>
+    </div>
+
+    <div>
+    <h3>Síguenos en Redes Sociales</h3>
+   <a target="_blank" href="https://www.instagram.com/last_twilight._?igsh=M2VwajFjcXA1MGg5"><img src="insta.jpg"></a>
+   <a target="_blank" href="https://www.facebook.com/profile.php?id=61554947274942"><img src="fa.jpg"></a>
+   <a target="_blank" href="https://www.youtube.com/@MARTELLJIMENEZKARLAYANETH"><img src="you.jpg"  style=" border-radius: 50px;"></a>
+   <a target="_blank" href="https://mx.pinterest.com/karlayanethmartelljimenez/"><img src="pi.jpg"  style=" border-radius: 50px;"></a>
+   </div>
+   </div>
+   <div class="DR">
+    <p>© 2025 Last Twilight. Todos los derechos reservados.</p><br>
+    </div>
+</body>
+</html>

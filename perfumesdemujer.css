@@ -1,0 +1,156 @@
+/*menu*/
+body {
+  margin: 0px;
+}
+
+a {
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  text-decoration: none; /*elimina el subrayado*/
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6d0510; /*color del menu*/
+  padding: 25px 30px;
+  font-family: Corsiva;
+  margin: 0px;
+  position: sticky; /*el efecto sticky*/
+  top: 0;
+  z-index: 1000; /*  Añade esto para que el menú esté encima de otros elementos */
+}
+
+.logo-img {
+  max-height: 55px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  margin: 0 9px;
+  font-size: 1.4em;
+  transition: color 0.3s;
+}
+
+.nav-item:hover {
+  color: black;
+}
+
+/*Productos*/
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto {
+    border: 2px solid #ccc;
+    border-color: black;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    width: calc(20% - 20px); /* Tres productos por fila */
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    transition: all 0.3s ease; /* Suaviza la transición */
+}
+
+/*carrito*/
+    .logo {             
+    cursor: pointer;             
+    font-size: 24px;             
+    font-weight: bold;         
+    }   
+    /*contador*/      
+    .cart-count {            
+    background-color: black;             
+    color: white;             
+    border-radius: 50%;            
+    padding: 5px 10px;            
+    margin-left: 10px;        
+    }   
+     .header {             
+    display: flex;             
+    align-items: center;            
+    }
+    /*Ventanita*/   
+    #modal {            
+    display: none;             
+    position: fixed;             
+    top: 0;             
+    left: 0;             
+    width: 100%;  
+    height: 100%;             
+    background-color: rgba(0, 0, 0, 0.7);             
+    justify-content: center;            
+    align-items: center;        
+    }        
+    .modal-content {             
+    background-color: white;            
+    padding: 20px;             
+    border-radius: 5px;        
+    }     
+    /*Los productos*/    
+    .product {            
+    display: flex;             
+    justify-content: space-between;        
+    }    
+    button{
+        font-size: 17px;
+        color: black;
+        border-color: black;
+        background-color: white;
+        border-radius: 5px;
+        margin: 10px;
+    } 
+    button:hover {
+    background-color: #6d0510;
+    color: white;
+}
+
+/*informacion*/
+.texto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6d0510; /*color del menu*/
+  padding: 13px 30px;
+  font-family: Corsiva;
+  margin: 0px;
+  color: white;
+}
+.texto a{
+    color: white;
+}
+.texto img{
+  max-height: 35px ;
+   padding: 10px;
+   border-radius: 22px;
+}
+
+/*Derechos reservados*/
+.DR{
+  text-align: center;
+   padding: 1px 0px;
+  margin: 0px;
+  color: white;
+  background-color: #6d0510; /*color del menu*/
+  font-size: 17px;
+  font-family: Corsiva;
+}
