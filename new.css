@@ -45,49 +45,62 @@ nav {
 .nav-item:hover {
   color: black;
 }
-
-/*fondo*/
-        .fondo {
-            width: 100%; /*ancho*/
-            height: 800px; /*alto*/
-            background-image: url('p1.jpg'); /* la imagen */
-            background-size: cover; /* Ajusta la imagen al contenedor */
-            background-position: center; /* Centra la imagen */
-        }
-
 /*Buscador*/
-
+.fondo {
+    width: 100%;
+    height: 800px;
+    background-image: url("p1.jpg"); 
+    background-size: cover;
+    background-position: center;
+}
 .container {
     max-width: 600px;
     margin: auto;
     text-align: center;
+    padding-top: 50px;
 }
-
-input[type="text"] {
+input {
     width: 100%;
-    padding: 5px;
-    margin-top: 0px;
+    padding: 10px;
+    margin-top: 10px;
     border-radius: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
-
+/* Estilos para los resultados */
 .results {
-    margin-top: 9px;
-    background-color: white;
-    border: 1px solid #ccc; /*tamaño de la linea*/
+    margin-top: 20px;
+    background-color: white; /*color del fondo del buscador*/
+    border: 0px solid #ccc;
     border-radius: 5px;
-    max-height: 100px;
-    border-color: black;
+    max-height: 400px;
     overflow-y: auto;
-    font-size: 25px;
+    font-size: 20px;
+    text-align: left;
+}
+/* Estilos específicos del ítem de producto */
+.contenedor-producto {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer; /*  Indica que es clicable */
+    transition: background-color 0.2s; /* Efecto */
 
 }
-
-.result-item {
-    border-bottom: 9px solid #eee;
+.contenedor-producto:hover {
+    background-color: #6d0510;
 }
-
-.result-item a { 
-    text-decoration: none;
+.imagen-producto {
+    max-width: 75px;
+    height: auto;
+    margin-right: 20px;
+}
+.nombre-producto {
+    font-size: 1em;
+    font-weight: bold;
     color: black;
 }
 

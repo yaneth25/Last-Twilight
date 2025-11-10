@@ -63,6 +63,7 @@ document.getElementById('form')
     .then(() => {
       btn.value = 'Send Email';
       alert('Su mensaje fue enviado con éxito');
+      
     }, (err) => {
       btn.value = 'Send Email';
       alert(JSON.stringify(err));
